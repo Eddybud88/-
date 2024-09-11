@@ -1,5 +1,5 @@
 # 查询
-dir(list)
+print(dir(list))
 
 # append(x)，向列表的末尾添加一个元素。示例：
 my_list = [1, 2, 3]
