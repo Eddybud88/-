@@ -8,7 +8,7 @@ from SoftWareTrial.gomoku_package.gomoku.board import GomokuBoard
 
 
 class GomokuGUI:
-    def __init__(self, board_size=15):
+    def __init__(self, board_size=14):
         self.board = GomokuBoard(board_size)
         self.ai = GomokuAI(self.board)
         self.current_player = 'X'  # 玩家先手
@@ -59,9 +59,9 @@ class GomokuGUI:
 
     def draw_star_points(self):
         star_positions = [
-            (3, 3), (3, 14),
-            (9, 9),
-            (14, 3), (14, 14),
+            (3, 3), (3, 13),
+            (13, 3), (13, 13),
+            (8, 8)
         ]
         radius = 6  # 调整星点大小
         for x, y in star_positions:
@@ -155,12 +155,3 @@ class GomokuGUI:
 def main():
     game = GomokuGUI()
     game.run()
-
-
-
-
-
-
-
-
-
